@@ -10,7 +10,7 @@ mart <- useMart("ENSEMBL_MART_ENSEMBL")
 mart <- useDataset("hsapiens_gene_ensembl", mart)
 
 #-------------IMPORTAÇÃO & FILTRO------------#
-data <- read.csv("ExpListLNC.csv", header=T, row.names=1)
+data <- read.csv(file.choose(), header=T, row.names=1)
 data <- data[!duplicated(data$hgnc_symbol), ]
 background <- read.csv("counts_local.csv", header=T, row.names=1)
 row.names(background) <- gsub("\\.[0-9]*$", "", row.names(background))
