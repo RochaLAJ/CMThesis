@@ -6,12 +6,11 @@ require(biomaRt)
 #-----------CONSTANTES--------------------#
 design <- as.factor(rep(c("1", "2"), each = 4))
 alpha <- 0.95
-myfactors <-
-  data.frame(
-    Thyroid = c("1", "1", "1","1", "2", "2", "2", '2'),
+myfactors <- data.frame(
+    Thyroid    = c("1", "1", "1","1", "2", "2", "2", '2'),
     ThyroidRun = c("1_1", "1_1", "1_1","1_1","2_2", "2_2", "2_2","2_2"),
-    Run = c(rep("R2", 4), rep("R2", 4))
-  )
+    Run        = c(rep("R2", 4), rep("R2", 4))
+                       )
 interest <- c("ensembl_gene_id", "hgnc_symbol", "transcript_length", 
               "gene_biotype", "entrezgene_id","percentage_gene_gc_content",
               "version","description")
