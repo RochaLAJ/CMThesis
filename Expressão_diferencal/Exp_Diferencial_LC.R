@@ -15,6 +15,7 @@ myfactors <-
 interest <- c("ensembl_gene_id", "hgnc_symbol", "transcript_length", 
               "gene_biotype", "entrezgene_id","percentage_gene_gc_content",
               "version","description")
+
 #----------SISTEMA DE ANOTAÇÃO------------#
 mart <- useMart("ENSEMBL_MART_ENSEMBL")
 mart <- useDataset("hsapiens_gene_ensembl", mart)
