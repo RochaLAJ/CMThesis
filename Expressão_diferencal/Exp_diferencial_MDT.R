@@ -12,7 +12,9 @@ myfactors <-
     ThyroidRun = c("1_1", "1_1", "1_1","1_1","2_2", "2_2", "2_2","2_2"),
     Run = c(rep("R2", 4), rep("R2", 4))
   )
-
+interest <- c("ensembl_gene_id", "hgnc_symbol", "transcript_length", 
+              "gene_biotype", "entrezgene_id","percentage_gene_gc_content",
+              "version","description")
 #----------SISTEMA DE ANOTAÇÃO------------#
 mart <- useMart("ENSEMBL_MART_ENSEMBL")
 mart <- useDataset("hsapiens_gene_ensembl", mart)
@@ -41,9 +43,7 @@ GDE <- degenes(mynoiseq, q = alpha)
 GDE <- GDE %>% filter(log2FC> 0.5| log2FC< -0.5)
 
 #------------APLICANDO ANOTAÇÃO------------#
-holder <- getBM(attributes = c("ensembl_gene_id", "hgnc_symbol", "transcript_length", 
-                               "gene_biotype", "entrezgene_id","percentage_gene_gc_content",
-                               "version","description"),
+holder <- getBM(attributes = interest,
                 values     = row.names(GDE), 
                 uniqueRows = TRUE,
                 verbose    = TRUE,
