@@ -1,6 +1,6 @@
 #!/bin/bash
 
-STAR --runMode genomeGenerate --genomeDir Genome --ge gnomeFastaFiles /star_index/ref.fa  \ 
+STAR --runMode genomeGenerate --genomeDir Genome gnomeFastaFiles /star_index/ref.fa  \ 
          --genomeSAsparseD 2 --genomeSAindexNbases 2 --runThreadN 16 --genomeChrBinNbits 6
 
 STAR --runMode alignReads --outSAMtype BAM Unsorted SortedByCoordinte --runThreadN 16 --genomeDir Genome --outFilterMultimapNmax 50 
