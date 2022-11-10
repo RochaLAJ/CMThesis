@@ -1,4 +1,5 @@
 #!/bin/bash
+
 $STAR --runMode genomeGenerate \
 --genomeDir ./ref/ \
 --genomeFastaFiles ./gencode/GRCh38.primary_assembly.genome.fa \
