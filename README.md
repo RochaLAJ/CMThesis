@@ -4,9 +4,10 @@ Repositório para armazenamento dos pipelines utilizados
 LCR: Grupo com metástase locoregional (LoCoRegional) <br />
 DM: Grupo com metástase à distância (Distant Metastasis)
 
-Meduview: Shinny app running at https://rochaluiz.shinyapps.io/meduview/
+Meduview: Shinny app running at https://rochaluiz.shinyapps.io/meduview/ <br />
 Running locally
-```source('./ui.R') 
+```
+   source('./ui.R') 
    source('./server.R')
    shinyApp(ui=ui, server=server)
 ```
