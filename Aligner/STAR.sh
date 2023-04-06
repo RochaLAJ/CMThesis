@@ -1,6 +1,6 @@
 #!/bin/bash
 
-$STAR --runMode genomeGenerate \
+STAR --runMode genomeGenerate \
 --genomeDir ./ref/ \
 --genomeFastaFiles ./gencode/GRCh38.primary_assembly.genome.fa \
 --sjdbGTFfile ./gencode/gencode.v42.primary_assembly.annotation.gtf \
@@ -11,7 +11,7 @@ $STAR --runMode genomeGenerate \
 --limitGenomeGenerateRAM 20000000000
 
 
-$STAR --runMode alignReads \
+STAR --runMode alignReads \
 --outSAMtype BAM Unsorted SortedByCoordinate \
 --runThreadN 16 \
 --genomeDir ./ref/ \
