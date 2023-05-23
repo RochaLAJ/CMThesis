@@ -1,0 +1,8 @@
+parm RET_M918T.prmtop
+trajin prod_imgM918T-003.nc
+mask :1-317
+strip :WAT
+strip :Na+
+strip :Cl-
+cluster avgout clusters.pdb
+cluster summary clusters.txt
