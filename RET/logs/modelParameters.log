@@ -1,0 +1,14 @@
+source leaprc.protein.ff14SB
+source leaprc.water.tip3p
+loadamberprep ATP.prep
+loadamberparams frcmod.phos
+
+ret = loadpdb ./4CKJ_loopmodel_ATP_PDB2PQR_2_M918V.pdb
+check ret
+solvatebox ret TIP3PBOX 12.0
+charge ret
+addionsRand ret Na+ 42 Cl- 49
+charge ret
+saveamberparm ret RET_M918V.prmtop RET_M918V.inpcrd
+quit
+
