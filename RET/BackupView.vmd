@@ -321,7 +321,7 @@ atomselect macro qwikmd_hetero {(not name QWIKMDDELETE and hetero and not qwikmd
 # Display settings
 display eyesep       0.060000
 display focallength  4.000000
-display height       6.400000
+display height       6.200000
 display distance     -2.000000
 display projection   Orthographic
 display nearclip set 0.500000
@@ -376,10 +376,11 @@ mol clipplane center 5 0 top {0.0 0.0 0.0}
 mol clipplane color  5 0 top {0.5 0.5 0.5 }
 mol clipplane normal 5 0 top {0.0 0.0 1.0}
 mol clipplane status 5 0 top {0}
+mol showrep top 0 0
 mol representation CPK 1.000000 0.300000 12.000000 12.000000
 mol color Element
 mol selection {resname atp}
-mol material Opaque
+mol material Transparent
 mol addrep top
 mol selupdate 1 top 0
 mol colupdate 1 top 0
@@ -411,7 +412,7 @@ mol clipplane color  5 1 top {0.5 0.5 0.5 }
 mol clipplane normal 5 1 top {0.0 0.0 1.0}
 mol clipplane status 5 1 top {0}
 mol representation NewRibbons 0.290000 17.000000 3.020000 0
-mol color Name
+mol color ColorID 32
 mol selection {resid 190 to 220}
 mol material Opaque
 mol addrep top
@@ -445,7 +446,7 @@ mol clipplane color  5 2 top {0.5 0.5 0.5 }
 mol clipplane normal 5 2 top {0.0 0.0 1.0}
 mol clipplane status 5 2 top {0}
 mol representation NewRibbons 0.290000 17.000000 3.020000 0
-mol color Name
+mol color ColorID 31
 mol selection {resid 20 to 50}
 mol material Opaque
 mol addrep top
@@ -513,7 +514,7 @@ mol clipplane color  5 4 top {0.5 0.5 0.5 }
 mol clipplane normal 5 4 top {0.0 0.0 1.0}
 mol clipplane status 5 4 top {0}
 mol representation NewRibbons 0.290000 17.000000 3.020000 0
-mol color Name
+mol color ColorID 3
 mol selection {resid 40 to 70}
 mol material Opaque
 mol addrep top
@@ -580,14 +581,48 @@ mol clipplane center 5 6 top {0.0 0.0 0.0}
 mol clipplane color  5 6 top {0.5 0.5 0.5 }
 mol clipplane normal 5 6 top {0.0 0.0 1.0}
 mol clipplane status 5 6 top {0}
+mol representation CPK 1.000000 0.300000 12.000000 12.000000
+mol color Name
+mol selection {resid 36 37 70}
+mol material Opaque
+mol addrep top
+mol selupdate 7 top 0
+mol colupdate 7 top 0
+mol scaleminmax top 7 0.000000 0.000000
+mol smoothrep top 7 0
+mol drawframes top 7 {now}
+mol clipplane center 0 7 top {0.0 0.0 0.0}
+mol clipplane color  0 7 top {0.5 0.5 0.5 }
+mol clipplane normal 0 7 top {0.0 0.0 1.0}
+mol clipplane status 0 7 top {0}
+mol clipplane center 1 7 top {0.0 0.0 0.0}
+mol clipplane color  1 7 top {0.5 0.5 0.5 }
+mol clipplane normal 1 7 top {0.0 0.0 1.0}
+mol clipplane status 1 7 top {0}
+mol clipplane center 2 7 top {0.0 0.0 0.0}
+mol clipplane color  2 7 top {0.5 0.5 0.5 }
+mol clipplane normal 2 7 top {0.0 0.0 1.0}
+mol clipplane status 2 7 top {0}
+mol clipplane center 3 7 top {0.0 0.0 0.0}
+mol clipplane color  3 7 top {0.5 0.5 0.5 }
+mol clipplane normal 3 7 top {0.0 0.0 1.0}
+mol clipplane status 3 7 top {0}
+mol clipplane center 4 7 top {0.0 0.0 0.0}
+mol clipplane color  4 7 top {0.5 0.5 0.5 }
+mol clipplane normal 4 7 top {0.0 0.0 1.0}
+mol clipplane status 4 7 top {0}
+mol clipplane center 5 7 top {0.0 0.0 0.0}
+mol clipplane color  5 7 top {0.5 0.5 0.5 }
+mol clipplane normal 5 7 top {0.0 0.0 1.0}
+mol clipplane status 5 7 top {0}
 mol rename top avg_M918V.pdb
 molinfo top set drawn 0
-set viewpoints([molinfo top]) {{{1 0 0 -45.3836} {0 1 0 -35.8177} {0 0 1 -47.5571} {0 0 0 1}} {{-0.606768 -0.455869 -0.651144 0} {-0.396623 0.883552 -0.248988 0} {0.688834 0.107176 -0.716928 0} {0 0 0 1}} {{0.0582655 0 0 0} {0 0.0582655 0 0} {0 0 0.0582655 0} {0 0 0 1}} {{1 0 0 0} {0 1 0 0} {0 0 1 0} {0 0 0 1}}}
+set viewpoints([molinfo top]) {{{1 0 0 -45.3836} {0 1 0 -35.8177} {0 0 1 -47.5571} {0 0 0 1}} {{-0.171798 0.200749 -0.964421 0} {-0.404903 0.878074 0.254903 0} {0.898028 0.434291 -0.0695727 0} {0 0 0 1}} {{0.0686712 0 0 0} {0 0.0686712 0 0} {0 0 0.0686712 0} {0 0 0 1}} {{1 0 0 -0.58} {0 1 0 0.21} {0 0 1 0} {0 0 0 1}}}
 lappend viewplist [molinfo top]
 # done with molecule 4
 mol new /home/rochalaj/RETDM/SCarlos0702/AvgPDBs/avg_M918T.pdb type pdb first 0 last -1 step 1 filebonds 1 autobonds 1 waitfor all
 mol delrep 0 top
-mol representation NewRibbons 0.290000 17.000000 3.020000 0
+mol representation NewRibbons 0.290000 17.000000 2.410000 0
 mol color Name
 mol selection {all}
 mol material Transparent
@@ -621,10 +656,11 @@ mol clipplane center 5 0 top {0.0 0.0 0.0}
 mol clipplane color  5 0 top {0.5 0.5 0.5 }
 mol clipplane normal 5 0 top {0.0 0.0 1.0}
 mol clipplane status 5 0 top {0}
+mol showrep top 0 0
 mol representation CPK 1.000000 0.300000 12.000000 12.000000
 mol color Element
 mol selection {resname atp}
-mol material Opaque
+mol material Transparent
 mol addrep top
 mol selupdate 1 top 0
 mol colupdate 1 top 0
@@ -656,7 +692,7 @@ mol clipplane color  5 1 top {0.5 0.5 0.5 }
 mol clipplane normal 5 1 top {0.0 0.0 1.0}
 mol clipplane status 5 1 top {0}
 mol representation NewRibbons 0.290000 17.000000 3.020000 0
-mol color Name
+mol color ColorID 1
 mol selection {resid  190 to 220}
 mol material Opaque
 mol addrep top
@@ -690,7 +726,7 @@ mol clipplane color  5 2 top {0.5 0.5 0.5 }
 mol clipplane normal 5 2 top {0.0 0.0 1.0}
 mol clipplane status 5 2 top {0}
 mol representation NewRibbons 0.290000 17.000000 3.020000 0
-mol color Name
+mol color ColorID 29
 mol selection {resid 20 to 50}
 mol material Opaque
 mol addrep top
@@ -758,7 +794,7 @@ mol clipplane color  5 4 top {0.5 0.5 0.5 }
 mol clipplane normal 5 4 top {0.0 0.0 1.0}
 mol clipplane status 5 4 top {0}
 mol representation NewRibbons 0.290000 17.000000 3.020000 0
-mol color Name
+mol color ColorID 30
 mol selection {resid 40 to 70}
 mol material Opaque
 mol addrep top
@@ -825,8 +861,43 @@ mol clipplane center 5 6 top {0.0 0.0 0.0}
 mol clipplane color  5 6 top {0.5 0.5 0.5 }
 mol clipplane normal 5 6 top {0.0 0.0 1.0}
 mol clipplane status 5 6 top {0}
+mol representation CPK 1.000000 0.300000 12.000000 12.000000
+mol color Name
+mol selection {resid 36 37 70}
+mol material Opaque
+mol addrep top
+mol selupdate 7 top 0
+mol colupdate 7 top 0
+mol scaleminmax top 7 0.000000 0.000000
+mol smoothrep top 7 0
+mol drawframes top 7 {now}
+mol clipplane center 0 7 top {0.0 0.0 0.0}
+mol clipplane color  0 7 top {0.5 0.5 0.5 }
+mol clipplane normal 0 7 top {0.0 0.0 1.0}
+mol clipplane status 0 7 top {0}
+mol clipplane center 1 7 top {0.0 0.0 0.0}
+mol clipplane color  1 7 top {0.5 0.5 0.5 }
+mol clipplane normal 1 7 top {0.0 0.0 1.0}
+mol clipplane status 1 7 top {0}
+mol clipplane center 2 7 top {0.0 0.0 0.0}
+mol clipplane color  2 7 top {0.5 0.5 0.5 }
+mol clipplane normal 2 7 top {0.0 0.0 1.0}
+mol clipplane status 2 7 top {0}
+mol clipplane center 3 7 top {0.0 0.0 0.0}
+mol clipplane color  3 7 top {0.5 0.5 0.5 }
+mol clipplane normal 3 7 top {0.0 0.0 1.0}
+mol clipplane status 3 7 top {0}
+mol clipplane center 4 7 top {0.0 0.0 0.0}
+mol clipplane color  4 7 top {0.5 0.5 0.5 }
+mol clipplane normal 4 7 top {0.0 0.0 1.0}
+mol clipplane status 4 7 top {0}
+mol clipplane center 5 7 top {0.0 0.0 0.0}
+mol clipplane color  5 7 top {0.5 0.5 0.5 }
+mol clipplane normal 5 7 top {0.0 0.0 1.0}
+mol clipplane status 5 7 top {0}
 mol rename top avg_M918T.pdb
-set viewpoints([molinfo top]) {{{1 0 0 -45.3836} {0 1 0 -35.8177} {0 0 1 -47.5571} {0 0 0 1}} {{-0.606768 -0.455869 -0.651144 0} {-0.396623 0.883552 -0.248988 0} {0.688834 0.107176 -0.716928 0} {0 0 0 1}} {{0.0582655 0 0 0} {0 0.0582655 0 0} {0 0 0.0582655 0} {0 0 0 1}} {{1 0 0 0} {0 1 0 0} {0 0 1 0} {0 0 0 1}}}
+molinfo top set drawn 0
+set viewpoints([molinfo top]) {{{1 0 0 -45.3836} {0 1 0 -35.8177} {0 0 1 -47.5571} {0 0 0 1}} {{-0.171798 0.200749 -0.964421 0} {-0.404903 0.878074 0.254903 0} {0.898028 0.434291 -0.0695727 0} {0 0 0 1}} {{0.0686712 0 0 0} {0 0.0686712 0 0} {0 0 0.0686712 0} {0 0 0 1}} {{1 0 0 -0.58} {0 1 0 0.21} {0 0 1 0} {0 0 0 1}}}
 lappend viewplist [molinfo top]
 # done with molecule 5
 mol new /home/rochalaj/RETDM/SCarlos0702/AvgPDBs/avg_WT.pdb type pdb first 0 last -1 step 1 filebonds 1 autobonds 1 waitfor all
@@ -865,6 +936,7 @@ mol clipplane center 5 0 top {0.0 0.0 0.0}
 mol clipplane color  5 0 top {0.5 0.5 0.5 }
 mol clipplane normal 5 0 top {0.0 0.0 1.0}
 mol clipplane status 5 0 top {0}
+mol showrep top 0 0
 mol representation CPK 1.000000 0.300000 12.000000 12.000000
 mol color Element
 mol selection {resname atp}
@@ -900,7 +972,7 @@ mol clipplane color  5 1 top {0.5 0.5 0.5 }
 mol clipplane normal 5 1 top {0.0 0.0 1.0}
 mol clipplane status 5 1 top {0}
 mol representation NewRibbons 0.290000 17.000000 3.020000 0
-mol color Name
+mol color ColorID 7
 mol selection {resid 190 to 220}
 mol material Opaque
 mol addrep top
@@ -934,7 +1006,7 @@ mol clipplane color  5 2 top {0.5 0.5 0.5 }
 mol clipplane normal 5 2 top {0.0 0.0 1.0}
 mol clipplane status 5 2 top {0}
 mol representation NewRibbons 0.290000 17.000000 3.020000 0
-mol color Name
+mol color ColorID 12
 mol selection {resid 20 to 50}
 mol material Opaque
 mol addrep top
@@ -1002,7 +1074,7 @@ mol clipplane color  5 4 top {0.5 0.5 0.5 }
 mol clipplane normal 5 4 top {0.0 0.0 1.0}
 mol clipplane status 5 4 top {0}
 mol representation NewRibbons 0.290000 17.000000 3.020000 0
-mol color Name
+mol color ColorID 20
 mol selection {resid 40 to 70}
 mol material Opaque
 mol addrep top
@@ -1038,7 +1110,7 @@ mol clipplane status 5 5 top {0}
 mol representation CPK 1.000000 0.300000 12.000000 12.000000
 mol color Name
 mol selection {resid 220}
-mol material Transparent
+mol material Opaque
 mol addrep top
 mol selupdate 6 top 0
 mol colupdate 6 top 0
@@ -1069,9 +1141,42 @@ mol clipplane center 5 6 top {0.0 0.0 0.0}
 mol clipplane color  5 6 top {0.5 0.5 0.5 }
 mol clipplane normal 5 6 top {0.0 0.0 1.0}
 mol clipplane status 5 6 top {0}
+mol representation CPK 1.000000 0.300000 12.000000 12.000000
+mol color Name
+mol selection {resid 36 37 70}
+mol material Transparent
+mol addrep top
+mol selupdate 7 top 0
+mol colupdate 7 top 0
+mol scaleminmax top 7 0.000000 0.000000
+mol smoothrep top 7 0
+mol drawframes top 7 {now}
+mol clipplane center 0 7 top {0.0 0.0 0.0}
+mol clipplane color  0 7 top {0.5 0.5 0.5 }
+mol clipplane normal 0 7 top {0.0 0.0 1.0}
+mol clipplane status 0 7 top {0}
+mol clipplane center 1 7 top {0.0 0.0 0.0}
+mol clipplane color  1 7 top {0.5 0.5 0.5 }
+mol clipplane normal 1 7 top {0.0 0.0 1.0}
+mol clipplane status 1 7 top {0}
+mol clipplane center 2 7 top {0.0 0.0 0.0}
+mol clipplane color  2 7 top {0.5 0.5 0.5 }
+mol clipplane normal 2 7 top {0.0 0.0 1.0}
+mol clipplane status 2 7 top {0}
+mol clipplane center 3 7 top {0.0 0.0 0.0}
+mol clipplane color  3 7 top {0.5 0.5 0.5 }
+mol clipplane normal 3 7 top {0.0 0.0 1.0}
+mol clipplane status 3 7 top {0}
+mol clipplane center 4 7 top {0.0 0.0 0.0}
+mol clipplane color  4 7 top {0.5 0.5 0.5 }
+mol clipplane normal 4 7 top {0.0 0.0 1.0}
+mol clipplane status 4 7 top {0}
+mol clipplane center 5 7 top {0.0 0.0 0.0}
+mol clipplane color  5 7 top {0.5 0.5 0.5 }
+mol clipplane normal 5 7 top {0.0 0.0 1.0}
+mol clipplane status 5 7 top {0}
 mol rename top avg_WT.pdb
-molinfo top set drawn 0
-set viewpoints([molinfo top]) {{{1 0 0 -45.3836} {0 1 0 -35.8177} {0 0 1 -47.5571} {0 0 0 1}} {{-0.606768 -0.455869 -0.651144 0} {-0.396623 0.883552 -0.248988 0} {0.688834 0.107176 -0.716928 0} {0 0 0 1}} {{0.0582655 0 0 0} {0 0.0582655 0 0} {0 0 0.0582655 0} {0 0 0 1}} {{1 0 0 0} {0 1 0 0} {0 0 1 0} {0 0 0 1}}}
+set viewpoints([molinfo top]) {{{1 0 0 -45.3836} {0 1 0 -35.8177} {0 0 1 -47.5571} {0 0 0 1}} {{-0.171798 0.200749 -0.964421 0} {-0.404903 0.878074 0.254903 0} {0.898028 0.434291 -0.0695727 0} {0 0 0 1}} {{0.0686712 0 0 0} {0 0.0686712 0 0} {0 0 0.0686712 0} {0 0 0 1}} {{1 0 0 -0.58} {0 1 0 0.21} {0 0 1 0} {0 0 0 1}}}
 lappend viewplist [molinfo top]
 set topmol [molinfo top]
 # done with molecule 6
@@ -1235,6 +1340,8 @@ color scale colors WBlk {1.0 1.0 1.0} {0.5 0.5 0.5} {0.0 0.0 0.0}
     {color Molecule {avg_WT.pdb} silver}
     {color Structure {3_10_Helix} blue}
     {color Surface {Grasp} gray}
+    {color Labels {Atoms} red}
+    {color Labels {Bonds} black}
     {color Labels {Springs} orange}
     {color Stage {Even} gray}
     {color Stage {Odd} silver}
@@ -1274,9 +1381,111 @@ color scale colors WBlk {1.0 1.0 1.0} {0.5 0.5 0.5} {0.0 0.0 0.0}
 }
 vmdrestoremycolors
 label textsize 1.0
-label add Atoms 5/1051
-label add Atoms 5/1051
-label textoffset Atoms 0 {0.0 0.0}
-label textformat Atoms 0 %R%d:%a
-label add Bonds 6/587 5/1051
-label textoffset Bonds 0 {0.0 0.0}
+label add Atoms 4/3512
+label textoffset Atoms 0 {-0.03846153989434242 -0.08241758495569229}
+label textformat Atoms 0 VAL918
+label add Atoms 4/3401
+label textoffset Atoms 1 {-0.10000000149011612 -0.06043956056237221}
+label textformat Atoms 1 ARG914
+label add Atoms 4/595
+label textoffset Atoms 2 {-0.08461538702249527 -0.08241758495569229}
+label textformat Atoms 2 GLU734
+label add Atoms 4/614
+label textoffset Atoms 3 {0.05384615436196327 -0.016483517363667488}
+label textformat Atoms 3 PHE735
+label add Atoms 4/1121
+label textoffset Atoms 4 {-0.11538461595773697 -0.06043956056237221}
+label textformat Atoms 4 GLU768
+label add Atoms 4/3384
+label add Atoms 4/3384
+label textoffset Atoms 5 {0.0 0.0}
+label textformat Atoms 5 %R%d:%a
+label add Atoms 4/5
+label textoffset Atoms 6 {-0.16153846681118011 -0.005494505632668734}
+label textformat Atoms 6 %R%d:%a
+label add Atoms 4/6
+label add Atoms 4/6
+label textoffset Atoms 7 {0.0 0.0}
+label textformat Atoms 7 %R%d:%a
+label add Atoms 4/601
+label add Atoms 4/601
+label textoffset Atoms 8 {0.0 0.0}
+label textformat Atoms 8 %R%d:%a
+label add Atoms 4/3381
+label add Atoms 4/3381
+label textoffset Atoms 9 {0.0 0.0}
+label textformat Atoms 9 %R%d:%a
+label add Atoms 4/602
+label add Atoms 4/602
+label textoffset Atoms 10 {0.0 0.0}
+label textformat Atoms 10 %R%d:%a
+label add Atoms 4/3502
+label add Atoms 4/3502
+label textoffset Atoms 11 {0.0 0.0}
+label textformat Atoms 11 %R%d:%a
+label add Atoms 5/3502
+label textoffset Atoms 12 {0.05384615436196327 -0.13736264407634735}
+label textformat Atoms 12 THR918
+label add Atoms 5/3384
+label textoffset Atoms 13 {0.06923077255487442 -0.10439560562372208}
+label textformat Atoms 13 ARG914
+label add Atoms 5/592
+label textoffset Atoms 14 {-0.05384615436196327 -0.06043956056237221}
+label textformat Atoms 14 GLU734
+label add Atoms 5/602
+label textoffset Atoms 15 {0.023076923564076424 -0.049450550228357315}
+label textformat Atoms 15 PHE735
+label add Atoms 5/1117
+label textoffset Atoms 16 {-0.19230769574642181 -0.0714285746216774}
+label textformat Atoms 16 GLU768
+label add Atoms 5/5
+label textoffset Atoms 17 {-0.08461538702249527 -0.2032967060804367}
+label textformat Atoms 17 %R%d:%a
+label add Atoms 5/3381
+label add Atoms 5/3381
+label textoffset Atoms 18 {0.0 0.0}
+label textformat Atoms 18 %R%d:%a
+label add Atoms 6/3502
+label textoffset Atoms 19 {0.0 0.0}
+label textformat Atoms 19 MET918
+label add Atoms 6/3383
+label textoffset Atoms 20 {0.06923077255487442 -0.06043956056237221}
+label textformat Atoms 20 ARG914
+label add Atoms 6/3384
+label add Atoms 6/3384
+label textoffset Atoms 21 {0.0 0.0}
+label textformat Atoms 21 %R%d:%a
+label add Atoms 6/3387
+label add Atoms 6/3387
+label textoffset Atoms 22 {0.0 0.0}
+label textformat Atoms 22 %R%d:%a
+label add Atoms 6/1
+label textoffset Atoms 23 {0.05384615436196327 -0.02747252769768238}
+label textformat Atoms 23 %R%d:%a
+label add Bonds 4/5 4/3382
+label textoffset Bonds 0 {-0.19230769574642181 0.02747252769768238}
+label add Bonds 4/3381 4/3502
+label textoffset Bonds 1 {-0.007692307699471712 -0.049450550228357315}
+label add Bonds 5/3384 5/3502
+label textoffset Bonds 2 {0.0 0.0}
+label add Bonds 5/592 5/602
+label add Bonds 5/592 5/602
+label textoffset Bonds 3 {0.0 0.0}
+label add Bonds 5/5 5/1117
+label add Bonds 5/5 5/1117
+label textoffset Bonds 4 {0.0 0.0}
+label add Bonds 5/5 5/3384
+label add Bonds 5/5 5/3384
+label textoffset Bonds 5 {0.0 0.0}
+label add Bonds 5/5 5/3381
+label textoffset Bonds 6 {-0.14615385234355927 0.06043956056237221}
+label add Bonds 6/3383 6/3502
+label textoffset Bonds 7 {0.0 0.0}
+label add Bonds 6/3383 6/3384
+label add Bonds 6/3383 6/3384
+label textoffset Bonds 8 {0.0 0.0}
+label add Bonds 6/3384 6/3387
+label add Bonds 6/3384 6/3387
+label textoffset Bonds 9 {0.0 0.0}
+label add Bonds 6/1 6/3383
+label textoffset Bonds 10 {-0.11538461595773697 0.10439560562372208}
