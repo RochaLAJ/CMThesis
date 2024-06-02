@@ -340,8 +340,7 @@ display aodirect 0.300000
 display dof off
 display dof_fnumber 64.000000
 display dof_focaldist 0.700000
-mol new /home/rochalaj/RETDM/RET_GDrive/RETwt.prmtop type parm7 first 0 last -1 step 1 filebonds 1 autobonds 1 waitfor all
-mol addfile /home/rochalaj/RETDM/RET_GDrive/prod_imgWT.nc type netcdf first 1 last 5000 step 10 filebonds 1 autobonds 1 waitfor all
+mol new /home/rochalaj/RETDM/SCarlos0702/AvgPDBs/avg_M918V.pdb type pdb first 0 last -1 step 1 filebonds 1 autobonds 1 waitfor all
 mol delrep 0 top
 mol representation Lines
 mol color Name
@@ -377,53 +376,11 @@ mol clipplane center 5 0 top {0.0 0.0 0.0}
 mol clipplane color  5 0 top {0.5 0.5 0.5 }
 mol clipplane normal 5 0 top {0.0 0.0 1.0}
 mol clipplane status 5 0 top {0}
-mol rename top RETwt.prmtop
-set viewpoints([molinfo top]) {{{1 0 0 -42.8681} {0 1 0 -40.3246} {0 0 1 -40.394} {0 0 0 1}} {{1 0 0 0} {0 1 0 0} {0 0 1 0} {0 0 0 1}} {{0.0173396 0 0 0} {0 0.0173396 0 0} {0 0 0.0173396 0} {0 0 0 1}} {{1 0 0 0} {0 1 0 0} {0 0 1 0} {0 0 0 1}}}
-lappend viewplist [molinfo top]
-# done with molecule 0
-mol new /home/rochalaj/RETDM/RET_GDrive/RET_M918V.prmtop type parm7 first 1 last 5000 step 10 filebonds 1 autobonds 1 waitfor all
-mol addfile /home/rochalaj/RETDM/RET_GDrive/prod_imgM918V.nc type netcdf first 1 last 5000 step 10 filebonds 1 autobonds 1 waitfor all
-mol delrep 0 top
-mol representation Lines
-mol color Name
-mol selection {all}
-mol material Opaque
-mol addrep top
-mol selupdate 0 top 0
-mol colupdate 0 top 0
-mol scaleminmax top 0 0.000000 0.000000
-mol smoothrep top 0 0
-mol drawframes top 0 {now}
-mol clipplane center 0 0 top {0.0 0.0 0.0}
-mol clipplane color  0 0 top {0.5 0.5 0.5 }
-mol clipplane normal 0 0 top {0.0 0.0 1.0}
-mol clipplane status 0 0 top {0}
-mol clipplane center 1 0 top {0.0 0.0 0.0}
-mol clipplane color  1 0 top {0.5 0.5 0.5 }
-mol clipplane normal 1 0 top {0.0 0.0 1.0}
-mol clipplane status 1 0 top {0}
-mol clipplane center 2 0 top {0.0 0.0 0.0}
-mol clipplane color  2 0 top {0.5 0.5 0.5 }
-mol clipplane normal 2 0 top {0.0 0.0 1.0}
-mol clipplane status 2 0 top {0}
-mol clipplane center 3 0 top {0.0 0.0 0.0}
-mol clipplane color  3 0 top {0.5 0.5 0.5 }
-mol clipplane normal 3 0 top {0.0 0.0 1.0}
-mol clipplane status 3 0 top {0}
-mol clipplane center 4 0 top {0.0 0.0 0.0}
-mol clipplane color  4 0 top {0.5 0.5 0.5 }
-mol clipplane normal 4 0 top {0.0 0.0 1.0}
-mol clipplane status 4 0 top {0}
-mol clipplane center 5 0 top {0.0 0.0 0.0}
-mol clipplane color  5 0 top {0.5 0.5 0.5 }
-mol clipplane normal 5 0 top {0.0 0.0 1.0}
-mol clipplane status 5 0 top {0}
-mol rename top RET_M918V.prmtop
-set viewpoints([molinfo top]) {{{1 0 0 -42.8681} {0 1 0 -40.3246} {0 0 1 -40.394} {0 0 0 1}} {{1 0 0 0} {0 1 0 0} {0 0 1 0} {0 0 0 1}} {{0.0173396 0 0 0} {0 0.0173396 0 0} {0 0 0.0173396 0} {0 0 0 1}} {{1 0 0 0} {0 1 0 0} {0 0 1 0} {0 0 0 1}}}
+mol rename top avg_M918V.pdb
+set viewpoints([molinfo top]) {{{1 0 0 -45.3836} {0 1 0 -35.8177} {0 0 1 -47.5571} {0 0 0 1}} {{0.742948 0.347574 -0.572031 0} {-0.0868704 0.89745 0.432477 0} {0.663687 -0.271615 0.696953 0} {0 0 0 1}} {{0.0239269 0 0 0} {0 0.0239269 0 0} {0 0 0.0239269 0} {0 0 0 1}} {{1 0 0 0} {0 1 0 0} {0 0 1 0} {0 0 0 1}}}
 lappend viewplist [molinfo top]
 # done with molecule 1
-mol new /home/rochalaj/RETDM/RET_GDrive/RET_M918T.prmtop type parm7 first 0 last -1 step 1 filebonds 1 autobonds 1 waitfor all
-mol addfile /home/rochalaj/RETDM/RET_GDrive/prod_imgM918T.nc type netcdf first 1 last 5000 step 10 filebonds 1 autobonds 1 waitfor all
+mol new /home/rochalaj/RETDM/SCarlos0702/AvgPDBs/avg_M918T.pdb type pdb first 0 last -1 step 1 filebonds 1 autobonds 1 waitfor all
 mol delrep 0 top
 mol representation Lines
 mol color Name
@@ -459,11 +416,51 @@ mol clipplane center 5 0 top {0.0 0.0 0.0}
 mol clipplane color  5 0 top {0.5 0.5 0.5 }
 mol clipplane normal 5 0 top {0.0 0.0 1.0}
 mol clipplane status 5 0 top {0}
-mol rename top RET_M918T.prmtop
-set viewpoints([molinfo top]) {{{1 0 0 -42.8681} {0 1 0 -40.3246} {0 0 1 -40.394} {0 0 0 1}} {{1 0 0 0} {0 1 0 0} {0 0 1 0} {0 0 0 1}} {{0.0173396 0 0 0} {0 0.0173396 0 0} {0 0 0.0173396 0} {0 0 0 1}} {{1 0 0 0} {0 1 0 0} {0 0 1 0} {0 0 0 1}}}
+mol rename top avg_M918T.pdb
+set viewpoints([molinfo top]) {{{1 0 0 -45.3836} {0 1 0 -35.8177} {0 0 1 -47.5571} {0 0 0 1}} {{0.742948 0.347574 -0.572031 0} {-0.0868704 0.89745 0.432477 0} {0.663687 -0.271615 0.696953 0} {0 0 0 1}} {{0.0239269 0 0 0} {0 0.0239269 0 0} {0 0 0.0239269 0} {0 0 0 1}} {{1 0 0 0} {0 1 0 0} {0 0 1 0} {0 0 0 1}}}
+lappend viewplist [molinfo top]
+# done with molecule 2
+mol new /home/rochalaj/RETDM/SCarlos0702/AvgPDBs/avg_WT.pdb type pdb first 0 last -1 step 1 filebonds 1 autobonds 1 waitfor all
+mol delrep 0 top
+mol representation Lines
+mol color Name
+mol selection {all}
+mol material Opaque
+mol addrep top
+mol selupdate 0 top 0
+mol colupdate 0 top 0
+mol scaleminmax top 0 0.000000 0.000000
+mol smoothrep top 0 0
+mol drawframes top 0 {now}
+mol clipplane center 0 0 top {0.0 0.0 0.0}
+mol clipplane color  0 0 top {0.5 0.5 0.5 }
+mol clipplane normal 0 0 top {0.0 0.0 1.0}
+mol clipplane status 0 0 top {0}
+mol clipplane center 1 0 top {0.0 0.0 0.0}
+mol clipplane color  1 0 top {0.5 0.5 0.5 }
+mol clipplane normal 1 0 top {0.0 0.0 1.0}
+mol clipplane status 1 0 top {0}
+mol clipplane center 2 0 top {0.0 0.0 0.0}
+mol clipplane color  2 0 top {0.5 0.5 0.5 }
+mol clipplane normal 2 0 top {0.0 0.0 1.0}
+mol clipplane status 2 0 top {0}
+mol clipplane center 3 0 top {0.0 0.0 0.0}
+mol clipplane color  3 0 top {0.5 0.5 0.5 }
+mol clipplane normal 3 0 top {0.0 0.0 1.0}
+mol clipplane status 3 0 top {0}
+mol clipplane center 4 0 top {0.0 0.0 0.0}
+mol clipplane color  4 0 top {0.5 0.5 0.5 }
+mol clipplane normal 4 0 top {0.0 0.0 1.0}
+mol clipplane status 4 0 top {0}
+mol clipplane center 5 0 top {0.0 0.0 0.0}
+mol clipplane color  5 0 top {0.5 0.5 0.5 }
+mol clipplane normal 5 0 top {0.0 0.0 1.0}
+mol clipplane status 5 0 top {0}
+mol rename top avg_WT.pdb
+set viewpoints([molinfo top]) {{{1 0 0 -45.3836} {0 1 0 -35.8177} {0 0 1 -47.5571} {0 0 0 1}} {{0.742948 0.347574 -0.572031 0} {-0.0868704 0.89745 0.432477 0} {0.663687 -0.271615 0.696953 0} {0 0 0 1}} {{0.0239269 0 0 0} {0 0.0239269 0 0} {0 0 0.0239269 0} {0 0 0 1}} {{1 0 0 0} {0 1 0 0} {0 0 1 0} {0 0 0 1}}}
 lappend viewplist [molinfo top]
 set topmol [molinfo top]
-# done with molecule 2
+# done with molecule 3
 foreach v $viewplist {
   molinfo $v set {center_matrix rotate_matrix scale_matrix global_matrix} $viewpoints($v)
 }
@@ -608,16 +605,13 @@ color scale colors WBlk {1.0 1.0 1.0} {0.5 0.5 0.5} {0.0 0.0 0.0}
     {color Resname {HIP} white}
     {color Resname {HIE} pink}
     {color Resname {MG} cyan}
-    {color Resname {Na+} purple}
-    {color Resname {Cl-} lime}
     {color Chain {X} blue}
     {color Segname {} blue}
     {color Conformation {all} blue}
     {color Molecule {0} blue}
-    {color Molecule {RETwt.prmtop} blue}
     {color Molecule {1} red}
-    {color Molecule {RET_M918V.prmtop} red}
-    {color Molecule {2} yellow}
+    {color Molecule {2} gray}
+    {color Molecule {3} orange}
     {color Structure {3_10_Helix} blue}
     {color Surface {Grasp} gray}
     {color Labels {Springs} orange}
