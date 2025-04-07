@@ -1,4 +1,4 @@
-function (x, type = c("pearson", "spearman"), use = c("complete.obs", 
+rcorr.adjust = function (x, type = c("pearson", "spearman"), use = c("complete.obs", 
     "pairwise.complete.obs"), adjust_method="fdr") 
 {
     opt <- options(scipen = 5)
